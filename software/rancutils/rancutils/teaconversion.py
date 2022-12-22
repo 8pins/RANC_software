@@ -134,7 +134,7 @@ def create_packets(packets, core_coordinates=None):
                     packets_tick.append(
                         Packet(destination_core=core_coordinates[core_num],
                                destination_axon=packet_num,
-                               destination_tick=0)
+                               destination_tick=tick_num)
                     )
             if len(output_packets) - 1 < tick_num:
                 output_packets.append(packets_tick)
